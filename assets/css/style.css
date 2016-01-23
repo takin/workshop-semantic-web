@@ -1,0 +1,33 @@
+body {
+  background: #ccc;
+  font-family: ubuntu;
+  line-height: 23px;
+}
+#container {
+  width: 700px;
+  margin: auto;
+  border-radius: 5px;
+  background: rgb(255,255,255);
+  padding: 10px 20px;
+  box-shadow: 0 0 2px #eea;
+}
+a.link {
+  color: rgb(255,0,0);
+}
+#modal-table {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+#modal-table td {
+  padding: 5px;
+}
+#modal-table tr:nth-child(odd) {
+  background-color: rgb(235,122,10);
+  color: rgb(255,255,255);
+}
+#modal-table tr:nth-child(even) {
+  background-color: rgba(235,122,10,.3);
+  color: rgb(115,10,10);
+}
