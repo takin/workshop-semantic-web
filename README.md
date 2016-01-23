@@ -1,7 +1,7 @@
 # Materi Workshop Semantic Web
 1. Untuk dapat mencoba aplikasi berbasis PHP, letakkan folder demo-app di dalam localhost dan akses melalui http://localhost/demo-app/
 
-## Round Down Acara:
+## Jadwal Acara:
 ### Hari Pertama:
 	1. Sesi Pagi -> Pengenalan dasar Semantic Web
 		+ Latar belakang semantic web
