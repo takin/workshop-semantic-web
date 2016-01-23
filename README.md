@@ -1,6 +1,7 @@
 # Materi Workshop Semantic Web
 Untuk dapat mencoba aplikasi berbasis PHP, letakkan folder demo-app di dalam localhost dan akses melalui http://localhost.
-1. Untuk contoh aplikasi pemanfaatan SPARQL Endpoint, gunakan alamat http://localhost/demo-app/
+---
+1. Untuk contoh aplikasi pemanfaatan SPARQL Endpoint, gunakan alamat http://localhost/demo-app
 2. Untuk contoh aplikasi parsing dircet graph gunakan alamat http://localhost/demo-app/lokal.html
 
 ## Jadwal Acara:
