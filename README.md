@@ -18,4 +18,5 @@
 
 Note:
 + Pastikan JAVA 8 sudah terintall di dalam komputer untuk dapat menggunaan tools serta aplikasi berbasis JAVA yang akan dibangun pada saat workshop berlangsung.
-+ Untuk Slide dan contoh aplkasi berbasis JAVA akan saya upload mulai hari ke 2
++ Untuk Slide akan saya upload setelah setiap sesi selesai
++ Contoh aplikasi berbasis JAVA akan saya upload setelah acara selesai
