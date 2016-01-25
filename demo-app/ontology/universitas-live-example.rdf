@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:unv="http://www.semanticweb.org/workshop/2016/university#"
+	xml:base="http://www.semanticweb.org/workshop/2016/university#">
+	
+	<rdfs:Class rdf:ID="Akademik"/>
+	<rdfs:Class rdf:ID="Orang"/>
+	<rdfs:Class rdf:ID="Mata_Kuliah"/>
+
+	<!-- definisi sub kelas dari Akademik -->
+	<rdfs:Class rdf:ID="Universitas">
+		<rdfs:subClassOf rdf:resource="#Akademik"/>
+	</rdfs:Class>
+	<rdfs:Class rdf:ID="Fakultas">
+		<rdfs:subClassOf rdf:resource="#Akademik" />
+	</rdfs:Class>
+	<!-- Akhir dari definisi sub kelas Akademik -->
+
+	<!-- Definisi Sub kelas Orang -->
+	<rdfs:Class rdf:ID="Karyawan">
+		<rdfs:subClassOf rdf:resource="#Orang" />
+	</rdfs:Class>
+	<rdfs:Class rdf:ID="Mahasiswa">
+		<rdfs:subClassOf rdf:resource="#Orang" />
+	</rdfs:Class>
+	<!-- Akhir dari definisi sub kelas Orang -->
+
+	<!-- Definisi sub kelas dari Karyawan -->
+	<rdfs:Class rdf:ID="Dosen">
+		<rdfs:subClassOf rdf:resource="#Karyawan" />
+	</rdfs:Class>
+	<rdfs:Class rdf:ID="Rektor">
+		<rdfs:subClassOf rdf:resource="#Karyawan" />
+	</rdfs:Class>
+	<rdfs:Class rdf:ID="Dekan">
+		<rdfs:subClassOf rdf:resource="#Karyawan" />
+	</rdfs:Class>
+	<rdfs:Class rdf:ID="Wakil_Dekan">
+		<rdfs:subClassOf rdf:resource="#Karyawan" />
+	</rdfs:Class>
+	<!-- Akhir definisi sub kelas Karyawan -->
+
+	<!-- Definisi property -->
+	<rdf:Property rdf:ID="mengajar">
+		<rdfs:domain rdf:resource="#Dosen"/>
+		<rdfs:range rdf:resource="#Mata_Kuliah"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="alamat">
+		<rdfs:range rdf:resource="&xsd;string"/>
+	</rdf:Property>
+	<!-- akhir dari definisi property -->
+
+	<!-- Definisi instance masing-masing kelas -->
+	<rdf:Description rdf:ID="Khabib_Mustofa">
+		<rdf:type rdf:resource="#Dosen"/>
+		<rdf:type rdf:resource="#Wakil_Dekan"/>
+		<unv:mengajar rdf:parseType="Collection">
+			<rdf:Bag>
+				<rdf:li rdf:resource="#bNode2"/>
+				<rdf:li rdf:resource="#bNode3"/>
+				<rdf:li rdf:resource="#bNode4"/>
+			</rdf:Bag>
+		</unv:mengajar>
+	</rdf:Description>
+
+	<Dosen rdf:ID="Sri_Kartati">
+		<unv:mengajar rdf:resource="#bNode1"/>
+	</Dosen>
+
+	<Mata_Kuliah rdf:nodeID="bNode1">
+		<unv:nama_mk rdf:datatype="&xsd;string">Case Base Reasoning</unv:nama_mk>
+		<unv:sks rdf:datatype="&xsd;integer">3</unv:sks>
+	</Mata_Kuliah>
+
+	<rdf:Description rdf:nodeID="bNode2">
+		<rdf:type rdf:resource="#Mata_Kuliah"/>
+		<unv:nama_mk rdf:datatype="&xsd;string">Semantic Web</unv:nama_mk>
+		<unv:sks rdf:datatype="&xsd;integer">3</unv:sks>
+	</rdf:Description>
+
+	<!-- Akhir definisi instance -->
+
+</rdf:RDF>
