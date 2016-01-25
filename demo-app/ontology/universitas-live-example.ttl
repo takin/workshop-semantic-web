@@ -1,0 +1,36 @@
+@prefix : <http://www.semanticweb.org/workshop/2016/university#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# daftar kelas
+:Akademik rdf:type rdfs:Class .
+:Orang a rdfs:Class .
+:Mata_Kuliah a rdfs:Class .
+
+:Universitas a :Akademik .
+:Fakulas a :Akademik .
+
+:Karyawan a :Orang .
+:Mahasiswa a :Orang .
+:Dosen a :Karyawan .
+:Dekan a :Karyawan .
+
+:mengajar a rdf:Property ;
+	rdf:domain :Dosen ;
+	rdf:range :Mata_Kuliah .
+:alamat a rdf:Property ;
+	rdfs:range xsd:string .
+
+:Khabib_Mustofa a :Dosen,
+	:Wakil_Dekan ;
+	:mengajar [
+		a rdf:Bag []
+	] .
+
+_:bnode1 a :Mata_Kuliah ;
+	:nama_mk "Semantic Web"^^xsd:string ;
+	:sks "3"^^xsd:integer .
+_:bnode2 a :Mata_Kuliah ;
+	:nama_mk "Sistem Management Basis Data"^^xsd:string ;
+	:sks "3"^^xsd:integer .

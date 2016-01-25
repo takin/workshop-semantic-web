@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide Presentasi Hari Pertama</title>
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/theme/sky.css">
+	<link rel="stylesheet" type="text/css" href="css/monokai.css" id="highlight-theme">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="public/components/reveal.js/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="public/components/reveal.js/js/reveal.js"></script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="zoom">
+				<img id="logo-kampus" src="images/ugm.png"/>
+				<h3 class="cover">WORKSHOP SEMANTIC WEB</h3>
+				<h6 class="cover">OWL Ontology</h6>
+				<h5>oleh</h5>
+				<h5>Syamsul Muttaqin</h5>
+			</section>
+			<section>
+				<h3>OWL in STACK ?</h3>
+				<div class="img-container-v">
+					<img src="images/sw-layer-cake.png">
+				</div>
+			</section>
+			<section>
+				<h3>Apakah RDFS sudah cukup ?</h3>
+				<img src="images/unstructured-rdf-4.png">
+			</section>
+			<section>
+				<section>
+					<h3>OWL Ontology</h3>
+					<div class="content-left">
+						<ul>
+							<li class="fragment">
+								OWL 1
+								<ul>
+									<li>Ditetapkan sebagai standar oleh W3C pada tahun 2004</li>
+									<li>Berbasis pada ekspresi SHOIN(D)</li>
+								</ul>
+							</li>
+							<li class="fragment">
+								OWL 2
+								<ul>
+									<li>Ditetapkan sebagai standar oleh W3C pada tahun 2009</li>
+									<li>Berbasis pada ekspresi SROIQ(D)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>OWL Ontology</h3>
+					<div class="content-left">
+						<ul>
+							<li class="fragment">
+								Bersifat Open World Assumption
+								<blockquote>
+									&rdquo;Sesuatu yang tidak di definisikan belum tentu salah&rdquo;
+								</blockquote>
+							</li>
+							<li class="fragment">
+								No Unique Name Assumption
+								<blockquote>
+									&rdquo;UGM belum tentu sama dengan Universitas Gadjah Mada&rdquo;
+								</blockquote>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>OWL Expression Concept</h3>
+					<div class="content-left">
+						<ul>
+							<li>
+								Axioms
+								<ul>
+									<li>
+										T-Box<br/>
+										Statement tentang struktur kelas
+									</li>
+									<li>
+										A-Box<br/>
+										Statement tentang dataset
+									</li>
+									<li>
+										R-Box<br/>
+										Statement tentang property
+									</li>
+								</ul>
+							</li>
+							<li>Class Constuction</li>
+						</ul>
+					</div>
+				</section>
+				</section>
+			<section>
+				<section>
+					<h3>Ekspresi OWL 1 - DL</h3>
+					<div class="content-left">
+						OWL 1 DL berbasis pada ekspresi SHOIN(D) yaitu:
+						<ul>
+							<li>S
+								<ul>
+									<li>Union</li>
+									<li>Intersection</li>
+									<li>Negation</li>
+									<li>Existential Quantifier</li>
+									<li>Universal Quantifier</li>
+									<li>Transitive Property</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>Ekspresi OWL 1 - DL</h3>
+					<div class="content-left">
+						<ul>
+							<li>
+								H
+								<ul>
+									<li>Class Hierarchy</li>
+									<li>Property Hierarchy</li>
+								</ul>
+							</li>
+							<li>O -> Nominals</li>
+							<li>I -> inverse property</li>
+							<li>N -> Number restriction &gt;= 10</li>
+							<li>D -> Datatype restriction</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>OWL 1 Hierarchy</h3>
+					<div class="img-container-v">
+					<img src="images/owl1-profile.png">
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Ekspresi OWL 2 - DL</h3>
+					<div class="content-left">
+						OWL 2 DL berbasis pada ekspresi SROIQ(D) yaitu:
+						<ul>
+							<li>S -> ALC+</li>
+							<li>R -> Role Restriction</li>
+							<li>O -> Nominals</li>
+							<li>I -> Inverse</li>
+							<li>Q -> Qualified Nominals</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>OWL 2 Hierarchy</h3>
+					<div class="img-container-v">
+					<img src="images/owl2-profile.png">
+					</div>
+				</section>
+			</section>
+			<section>
+				<img src="images/OWL2-structure.png">
+			</section>
+			<section>
+				<h6>Terima Kasih</h6>
+				<p>Slide dan materi lainnya bisa di unduh di <a href="https://github.com/takin/workshop-semantic-web" target="__blank">Github</a></p>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>

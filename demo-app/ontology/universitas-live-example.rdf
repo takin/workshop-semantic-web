@@ -53,6 +53,14 @@
 	<rdf:Property rdf:ID="alamat">
 		<rdfs:range rdf:resource="&xsd;string"/>
 	</rdf:Property>
+	<rdf:Property rdf:ID="sks">
+		<rdfs:domain rdf:resource="#Mata_Kuliah"/>
+		<rdfs:range rdf:resource="&xsd;integer"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="nama_mk">
+		<rdfs:domain rdf:resource="#Mata_Kuliah"/>
+		<rdfs:range rdf:resource="&xsd;string"/>
+	</rdf:Property>
 	<!-- akhir dari definisi property -->
 
 	<!-- Definisi instance masing-masing kelas -->
@@ -68,14 +76,15 @@
 		</unv:mengajar>
 	</rdf:Description>
 
-	<Dosen rdf:ID="Sri_Kartati">
+	<unv:Dosen rdf:ID="Sri_Kartati">
 		<unv:mengajar rdf:resource="#bNode1"/>
-	</Dosen>
+	</unv:Dosen>
 
-	<Mata_Kuliah rdf:nodeID="bNode1">
+	<rdf:Description rdf:nodeID="bNode1">
+		<rdf:type rdf:resource="#Mata_Kuliah" />
 		<unv:nama_mk rdf:datatype="&xsd;string">Case Base Reasoning</unv:nama_mk>
 		<unv:sks rdf:datatype="&xsd;integer">3</unv:sks>
-	</Mata_Kuliah>
+	</rdf:Description>
 
 	<rdf:Description rdf:nodeID="bNode2">
 		<rdf:type rdf:resource="#Mata_Kuliah"/>

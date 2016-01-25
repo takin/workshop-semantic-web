@@ -53,7 +53,7 @@ if ( isset($_GET['resource']) ) {
 	// Here we load the RDF via file I/O path, if you want to load
 	// the RDF via HTTP then use load() method instead ($graph->load())
 	// ////////////////////////////////////////////////////////////////
-	$graph->parseFile('../ontology/universitas-rdfs.rdf','rdfxml');
+	$graph->parseFile('../ontology/universitas-live-example.ttl','turtle');
 
 	// At this stage, we are ready to process the graph
 	// ==========================================================
