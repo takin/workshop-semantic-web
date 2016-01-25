@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide Presentasi Hari Pertama</title>
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/theme/sky.css">
+	<link rel="stylesheet" type="text/css" href="css/monokai.css" id="highlight-theme">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="public/components/reveal.js/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="public/components/reveal.js/js/reveal.js"></script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="zoom">
+				<img id="logo-kampus" src="images/ugm.png"/>
+				<h3 class="cover">WORKSHOP SEMANTIC WEB</h3>
+				<h6 class="cover">RDF-Schema</h6>
+				<h5>oleh</h5>
+				<h5>Syamsul Muttaqin</h5>
+			</section>
+			<section>
+				<h3>RDFS in STACK ?</h3>
+				<img src="images/sw-layer-cake.png">
+			</section>
+			<section>
+				<h3>What is missing in RDF ?</h3>
+				<div class="content-left">
+					<ul>
+						<li class="fragment">Definisi eksplisit tentang kelas</li>
+						<li class="fragment">
+							Definisi tentang hirarki
+							<ul>
+								<li class="fragment">Hirarki Kelas</li>
+								<li class="fragment">Hirarki properti</li>
+							</ul>
+						</li>
+						<li class="fragment">Definisi tentang restriksi properti</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<section data-transition="none">
+					<img src="images/unstructured-rdf-1.png">
+					<blockquote>&nbsp;</blockquote>
+					<blockquote>&nbsp;</blockquote>
+					<blockquote>&nbsp;</blockquote>
+				</section>
+				<section data-transition="none">
+					<img src="images/unstructured-rdf-2.png">
+					<blockquote>
+						univ:Syamsul_Muttaqin -> rdf:type -> univ:Mahasiswa
+					</blockquote>
+					<blockquote>&nbsp;</blockquote>
+					<blockquote>&nbsp;</blockquote>
+				</section>
+				<section data-transition="none">
+					<img src="images/unstructured-rdf-3.png">
+					<blockquote>
+						univ:Syamsul_Muttaqin -> rdf:type -> univ:Mahasiswa
+					</blockquote>
+					<blockquote>
+						univ:MIPA -> univ:institusi -> univ:Syamsul_Muttaqin
+					</blockquote>
+					<blockquote>&nbsp;</blockquote>
+				</section>
+				<section data-transition="none">
+					<img src="images/unstructured-rdf-3.png">
+					<blockquote>
+						univ:Syamsul_Muttaqin -> rdf:type -> univ:Mahasiswa
+					</blockquote>
+					<blockquote>
+						univ:MIPA -> univ:institusi -> univ:Syamsul_Muttaqin
+					</blockquote>
+					<blockquote>Valid ???</blockquote>
+				</section>
+				<section>
+					<img src="images/rdfs-structure.png">
+				</section>
+			</section>
+			<section>
+				<h3>RDFS syntax</h3>
+				<div class="content-left">
+					<ul>
+						<li>rdfs:Class</li>
+						<li>rdf:Property</li>
+						<li>rdfs:Resource</li>
+						<li>rdfs:Literal</li>
+						<li>rdfs:Datatype</li>
+						<li>rdfs:Container</li>
+						<li>rdf:XMLLiteral</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<a href="4-owl-ontology.html">Next Slide -&gt; OWL Ontology</a>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>

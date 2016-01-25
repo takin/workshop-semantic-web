@@ -1,0 +1,22 @@
+{
+  "name": "slide",
+  "homepage": "https://github.com/takin/workshop-semantic-web",
+  "authors": [
+    "syamsul muttaqin <lombok.oc@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal-js": "~2.6.2"
+  }
+}

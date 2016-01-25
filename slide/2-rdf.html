@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide Presentasi Hari Pertama</title>
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/theme/sky.css">
+	<link rel="stylesheet" type="text/css" href="css/monokai.css" id="highlight-theme">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="public/components/reveal.js/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="public/components/reveal.js/js/reveal.js"></script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="zoom">
+				<img id="logo-kampus" src="images/ugm.png"/>
+				<h3 class="cover">WORKSHOP SEMANTIC WEB</h3>
+				<h6 class="cover">Resource Description Framework</h6>
+				<h5>oleh</h5>
+				<h5>Syamsul Muttaqin</h5>
+			</section>
+			<section>
+				<img src="images/sw-layer-cake.png">
+			</section>
+			<section>
+				<section>
+					<h3>Anotasi konsep</h3>
+					<blockquote>&rdquo;Jaguar adalah mobil buatan Inggris&rdquo;</blockquote>
+					<div class="content-left">...dalam bentuk XML</div>
+<pre class="fragment"><code class="hljs xml">&lt;mobil&gt;
+  &lt;merek&gt;jaguar&lt;/merek&gt;
+  &lt;buatan&gt;Inggris&lt;/buatan&gt;
+&lt;/mobil&gt;</code></pre>
+<pre class="fragment"><code class="hljs xml">&lt;mobil merek="jaguar"&gt;
+  &lt;buatan&gt;Inggris&lt;/buatan&gt;
+&lt;/mobil&gt;</code></pre>
+<pre class="fragment"><code class="hljs xml">&lt;mobil merek="jaguar" buatan="inggris"/&gt;</code></pre>
+				</section>
+				<section>
+					<h3>The problems is...</h3>
+					<ul>
+						<li class="fragment">Struktur representasi data (mungkin) tidak seragam</li>
+						<li class="fragment">Setiap orang dapat menggunakan istilah yang berbeda untuk merepresentasikan konsep yang sama</li>
+						<li class="fragment">Mesin harus mampu mengenali struktur representasi yang berbeda (menggunakan XSLT)</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Resource description framework</h3>
+					<ul>
+						<li class="fragment">Standarisasi cara merepresentasikan <i>knowledge</i></li>
+						<li class="fragment">Pengetahuan direpresentasikan dalam bentuk <i>statement</i></li>
+						<li class="fragment">Setiap <i>statement</i> terdiri dari subjek, predikat dan objek</li>
+						<li class="fragment">Kumpulan <i>triple statement</i> membentuk <i>graph</i></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Resource description framework</h3>
+					<blockquote>&rdquo;Jaguar adalah mobil buatan Inggris&rdquo;</blockquote>
+					<div class="fragment img-container-v"><img src="images/directed-graph.png"></div>
+					<ul>
+						<li class="fragment">Subjek dan predikat harus berbentuk URI</li>
+						<li class="fragment">Objek dapat berupa URI atau Literal</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Resource description framework</h3>
+					<blockquote>&rdquo;Jaguar adalah mobil buatan Inggris&rdquo;</blockquote>
+					<div class="fragment img-container-v"><img src="images/triple-statement.png"></div>
+				</section>
+				<section>
+					<h3>Resource description framework</h3>
+					<img src="images/graph-statements.png">
+				</section>
+			</section>
+			<section>
+				<h3>RDF Serialization</h3>
+				<div class="content-left">
+					<ul>
+						<li class="fragment grow">RDF/XML</li>
+						<li class="fragment grow">Turtle</li>
+						<li>N3</li>
+						<li>N-Triple</li>
+						<li>JSON-LD</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h3>RDF Statement</h3>
+				<div class="content-left">
+					<ul>
+						<li>rdf:Description</li>
+						<li>rdf:about</li>
+						<li>rdf:resource</li>
+						<li>rdf:ID</li>
+						<li>
+							Collection
+							<ul>
+								<li>rdf:Bag</li>
+								<li>rdf:Seq</li>
+								<li>rdf:Alt</li>
+							</ul>
+						</li>
+						<li>Blank Node</li>
+						<li>Reification</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<section>
+					<blockquote>Blank node adalah resource yang tidak memiliki alamat global sehingga hanya dapat diakses dalam internal RDF</blockquote>
+					<img src="images/rdf-blank-node.png">
+				</section>
+				<section>
+					<p>
+						<code><i>rdf:Bag</i></code> adalah kontainer untuk mendefinisikan node yang berupa <i>unordered list</i>
+					</p>
+					<img src="images/rdf-bag-container.png">
+				</section>
+				<section>
+					<p>
+						<code><i>rdf:Seq</i></code> adalah kontainer untuk mendefinisikan node yang berupa <i>ordered list</i>
+					</p>
+					<img src="images/rdf-seq-container.png">
+				</section>
+				<section>
+					<p>
+						<code><i>rdf:Alt</i></code> adalah kontainer untuk mendefinisikan node-node alternatif dari sebuah statement
+					</p>
+					<img src="images/rdf-alt-container.png">
+				</section>
+			</section>
+			<section>
+				<h3>RDF in XML Serialization</h3>
+<pre><code class="xml hljs">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:univ="http://www.semanticweb.org/workshop/2016/ontologies/university#"&gt;
+  
+  &lt;rdf:Description rdf:about="http://www.semanticweb.org/workshop/2016/ontologies/university#Universitas_Gadjah_Mada"&gt;
+      &lt;univ:alamat&gt;Bulaksumur, Yogyakarta&lt;/univ:alamat&gt;
+      &lt;univ:telp&gt;(0274) 588688&lt;/univ:telp&gt;
+  &lt;/rdf:Description&gt;
+
+  &lt;rdf:Description rdf:about="http://www.semanticweb.org/workshop/2016/ontologies/university#MIPA"&gt;
+      &lt;univ:institusi rdf:resource="http://www.semanticweb.org/workshop/2016/ontologies/university#Universitas_Gadjah_Mada"/&gt;
+      &lt;univ:alamat&gt;Bulaksumur, Yogyakarta&lt;/univ:alamat&gt;
+      &lt;univ:telp&gt;(0274) 588688&lt;/univ:telp&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;</code></pre>
+			</section>
+			<section>
+				<h3>RDF in Turtle Serialization</h3>
+<pre><code class="html hljs">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-nd-syntax#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix : &lt;http://www.semanticweb.org/workshop/2016/ontologies/university#&gt; .
+
+:Universitas_Gadjah_Mada rdf:type :Universitas .
+:Universitas_Gadjah_Mada :gambar &lt;https://upload.wikimedia.org/wikipedia/en/6/6d/Gadjah_Mada_University_Logo.gif&gt; .
+:MIPA a :Fakultas .
+:MIPA :institusi :Universitas_Gadjah_Mada .
+:MIPA :alamat "Sekip Utara Bulaksumur, Yogyakarta"^^xsd:string .
+:MIPA :telp "(0274) 513339"^^rdfs:Literal .
+</code></pre>
+			</section>
+			<section>
+				<a href="3-rdfs.html">Next Slide -&gt; RDFS</a>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>

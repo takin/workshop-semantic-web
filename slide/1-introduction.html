@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide Presentasi Hari Pertama</title>
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="public/components/reveal.js/css/theme/sky.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="public/components/reveal.js/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="public/components/reveal.js/js/reveal.js"></script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="zoom">
+				<img id="logo-kampus" src="images/ugm.png"/>
+				<h3 class="cover">WORKSHOP SEMANTIC WEB</h3>
+				<h6 class="cover">Introduction to Semantic Web</h6>
+				<h5>oleh</h5>
+				<h5>Syamsul Muttaqin</h5>
+			</section>
+			<section>
+				<section>
+					<h3>Semantic Web ?</h3>
+					<span class="fragment">
+						<blockquote>&rdquo;The Semantic Web is an extension to the current Web in which information is given Well-defined meaning, better enabling computers ans people to work in cooperation&rdquo;</blockquote>
+						-- Tim Berners-Lee --
+					</span>
+				</section>
+				<section>
+					<blockquote>&rdquo;Web yang memiliki konten yang dapat dipahami oleh manusia dan mesin&rdquo;</blockquote>
+				</section>
+			</section>
+			<section>
+				<section data-background="images/web-page.png">
+					<h3>Kendala Web saat ini</h3>
+					<ul>
+						<li class="fragment">
+							Halaman web dibangun dengan menggunakan HTML
+							<ul>
+								<li class="fragment">Presentasi konten</li>
+								<li class="fragment">Membangun <i>hyperlink</i> antar halaman</li>
+							</ul>
+						</li>
+						<li class="fragment">Konten hanya dapat dipahami oleh manusia</li>
+						<li class="fragment">Konten tidak memiliki makna yang eksplisit sehingga komputer sulit untuk memahami makna yang terkandung di dalamnya</li>
+					</ul>
+				</section>
+				<section data-background="images/ir-problems.png">
+					<div class="content-left">
+						<h3><i>Information Retrieval Problems</i></h3>
+						<ul>
+							<li class="fragment">Bagaimana menangani sifat ambigu bahasa alami</li>
+							<li class="fragment">
+								Sebuah kata memiliki banyak makna 
+								<ul>
+									<li class="fragment">Kijang ?</li>
+									<li class="fragment">Apple ?</li>
+								</ul>
+							</li>
+							<li class="fragment">
+								Banyak kata/frasa memiliki makna sama
+								<ul>
+									<li class="fragment">Muka &lt;-&gt; Wajah</li>
+									<li class="fragment">Tiba &lt;-&gt; Datang</li>
+									<li class="fragment">UGM &lt;-&gt; Universitas Gadjah Mada</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section data-background="images/conversation.jpg">
+					<h3>Komunikasi sukses jika...</h3>
+					<span class="fragment content-left"><i>Sender</i> dan <i>Receiver</i> memiliki konteks pemahaman yang sama tentang sebuah <b>konsep</b></span>
+					<blockquote class="fragment">&rdquo;...kelangkaan menyebabkan harga <span class="fragment grow highlight-red">Apel</span> naik...&rdquo;</blockquote>
+				</section>
+				<section>
+					<h3>Memahami Konsep</h3>
+					<img src="images/konsep.png">
+					<div class="footnote">*image by Dr Harald Sack's slide</div>
+				</section>
+			</section>
+			<section>
+				<section data-state="video">
+					<video src="videos/kitkat.mp4"></video>
+				</section>
+				<section>
+					<h3>Tujuan semantic web</h3>
+					<div class="content-left">
+						<ul>
+							<li class="fragment">Memberikan makna eksplisit tentang sebuah konsep</li>
+							<li class="fragment">Menghilangkan sifat ambigu pada bahasa alami</li>
+							<li class="fragment">Mengajarkan mesin untuk memahami konteks</li>
+						</ul>
+						<blockquote class="fragment">dengan cara...</blockquote> 
+						<blockquote class="fragment">...memberikan <b>metadata</b> pada setiap konsep yang dibicarakan</blockquote>
+					</div>
+				</section>
+				<section>
+					<h3>Sehingga diharapkan...</h3>
+					<ul>
+						<li class="fragment">
+							Komunikasi <i>Machine to Machine</i> dapat terbentuk tanpa campur tangan manusia
+							<ul>
+								<li><i>Smart agent</i></li>
+							</ul>
+						</li>
+						<li class="fragment">Akurasi hasil pencarian lebih tinggi</li>
+						<li class="fragment">Tidak ada <i>misleading information</i></li>
+						<li class="fragment">Mesin dapat memahami informasi yang bersifat eksplisit</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h3>Semantic web stack</h3>
+				<div class="img-container">
+					<img src="images/sw-layer-cake.png">
+				</div>
+			</section>
+			<section>
+				<a href="2-rdf.html">Next Slide -&gt; RDF</a>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>

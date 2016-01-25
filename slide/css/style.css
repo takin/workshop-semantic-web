@@ -1,0 +1,110 @@
+body {
+  background: rgb(50,50,50);
+}
+.reveal table {
+  width: 90%;
+  height: 100%;
+  font-size: 25px;
+  margin: 0 5% 20px 5%;
+  border: 1px solid rgb(110,20, 0);
+}
+.reveal table tr td, .reveal table tr th {
+  border: 1px solid rgb(110,20, 0);
+}
+.reveal table th {
+  padding: 15px;
+  background-color: rgba(233,10,10,.5);
+  color: #fff;
+}
+.reveal ol li,.reveal ul li {
+  padding-bottom: 10px;
+  font-size: 33px;
+}
+.reveal ol li {
+  margin-left: 70px;
+}
+.reveal ul li ul li {
+  padding-bottom: 0px;
+}
+.reveal section {
+  background-color: rgba(255,255,255,.85);
+  border-radius: 5px;
+  color: rgb(110,20, 0);
+  box-shadow: 1px 5px 10px #222;
+  /*text-align: left;*/
+}
+section .footnote {
+  font-weight: normal;
+  font-size: 17px;
+  text-align: left;
+  margin-left: 20px;
+}
+.reveal section h3 {
+  font-size: 46px;
+    border-bottom: 2px solid rgb(200,200,210);
+    margin: 0 20px 10px 20px;
+    padding-bottom: 15px;
+}
+.reveal section h3.cover {
+  border: none;
+}
+.reveal section .content-left {
+  text-align: left;
+  margin-left: 40px;
+}
+.reveal section .content-left blockquote {
+  width: 90%;
+}
+.reveal section p {
+  margin: 0 30px 5px 30px;
+}
+.reveal section ul li {
+  margin: 0 30px 5px 65px;
+}
+.reveal section#cover {
+  text-align: center;
+}
+.img-container,.img-container-v {
+  width: 100%;
+  text-align: center;
+}
+.reveal section img, .reveal blockquote {
+  background:none;
+  box-shadow: none;
+  width: auto;
+  max-height: 520px;
+  border:none;
+  width: 100%;
+}
+.reveal section .img-container-v img {
+  width: auto;
+}
+#logo-kampus-last {
+  background:none; 
+  border:none;
+  box-shadow:none; 
+  width: 160px;
+  display: block;
+  margin: auto;
+}
+#logo-kampus { 
+  background:none; 
+  border:none;
+  box-shadow:none;
+    position: relative;
+    top: -100px;
+  width: 160px;
+  z-index: 2;
+}
+
+.reveal section h6 {
+  background:rgba(255,148,50,.8);
+  position: relative;
+  padding: 15px 0 15px 15px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+   display: block;
+  top: -20px;
+  border-radius: 5px 5px 0 0;
+}
