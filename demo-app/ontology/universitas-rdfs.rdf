@@ -19,9 +19,6 @@
 	<rdfs:Class rdf:ID="Fakultas">
 		<rdfs:subClassOf rdf:resource="#Akademik"/>
 	</rdfs:Class>
-	<rdfs:Class rdf:ID="Fakultas">
-		<rdfs:subClassOf rdf:resource="#Akademik"/>
-	</rdfs:Class>
 	<rdfs:Class rdf:ID="Karwayan">
 		<rdfs:subClassOf rdf:resource="#Orang"/>
 	</rdfs:Class>
