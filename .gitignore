@@ -1,4 +1,5 @@
 .phpintel/
+demo-app-java/.settings/*
 Servers
 web-version/
 .recommenders/
