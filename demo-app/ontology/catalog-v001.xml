@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1453692725692" name="http://www.semanticweb.org/syamsul/ontologies/2016/0/university" uri="universitas-owl.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1453692725692" name="duplicate:http://www.semanticweb.org/workshop/2016/ontologies/university#" uri="universitas-rdfs.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1453692725692" name="duplicate:http://www.semanticweb.org/workshop/2016/ontologies/university#" uri="universitas-rdf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1453732990466" name="http://www.semanticweb.org/syamsul/ontologies/2016/0/university" uri="universitas-owl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1453732990466" name="duplicate:http://www.semanticweb.org/workshop/2016/ontologies/university#" uri="universitas-rdfs.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1453732990466" name="duplicate:http://www.semanticweb.org/workshop/2016/ontologies/university#" uri="universitas-rdf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1453732990466" name="http://www.semanticweb.org/workshop/2016/university#" uri="universitas-live-example.rdf"/>
     </group>
 </catalog>

@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/workshop/2016/university#> .
+@prefix : <http://www.semanticweb.org/workshop/2016/ontologies/university#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,13 +8,21 @@
 :Orang a rdfs:Class .
 :Mata_Kuliah a rdfs:Class .
 
-:Universitas a :Akademik .
-:Fakulas a :Akademik .
+:Universitas rdf:type rdfs:Class;
+	rdfs:subClassOf :Akademik .
+:Fakulas a rdfs:Class;
+	rdfs:subClassOf :Akademik .
 
-:Karyawan a :Orang .
-:Mahasiswa a :Orang .
-:Dosen a :Karyawan .
-:Dekan a :Karyawan .
+:Karyawan a rdfs:Class ;
+	rdfs:subClassOf :Orang .
+:Mahasiswa a rdfs:Class ;
+	rdfs:subClassOf :Orang .
+:Dosen a rdfs:Class ;
+	rdfs:subClassOf :Karyawan .
+:Dekan a rdfs:Class ;
+	rdfs:subClassOf :Karyawan .
+:Wakil_Dekan a rdfs:Class ;
+	rdfs:subClassOf :Karyawan .
 
 :mengajar a rdf:Property ;
 	rdf:domain :Dosen ;
@@ -22,10 +30,11 @@
 :alamat a rdf:Property ;
 	rdfs:range xsd:string .
 
-:Khabib_Mustofa a :Dosen,
+:Khabib_Mustofa a :Dosen, 
 	:Wakil_Dekan ;
 	:mengajar [
-		a rdf:Bag []
+		a rdf:Bag ;
+		rdf:li :bnode1, :bnode2
 	] .
 
 _:bnode1 a :Mata_Kuliah ;

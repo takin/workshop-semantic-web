@@ -1,3 +1,6 @@
 .phpintel/
+Servers
+web-version/
+.recommenders/
 .metadata/*
 slide/images/*.graphml
