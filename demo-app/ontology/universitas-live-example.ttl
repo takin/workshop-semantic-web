@@ -25,8 +25,8 @@
 	rdfs:subClassOf :Karyawan .
 
 :mengajar a rdf:Property ;
-	rdf:domain :Dosen ;
-	rdf:range :Mata_Kuliah .
+	rdfs:domain :Dosen ;
+	rdfs:range :Mata_Kuliah .
 :alamat a rdf:Property ;
 	rdfs:range xsd:string .
 
